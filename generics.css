@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* Mostly equivalates to 10px but allows users accessibility zoom settings to work*/
-    /* font-size: 10px; */
+  /* font-size: 10px; */
   scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -65,14 +65,20 @@ ul.typographic {
   padding-inline-start: 20px;
 }
 
+/* stops icons being the target of JS click events */
+a.btn *,
+button * {
+  pointer-events: null;
+}
+
 /* For 'accessibility text'. If your button only has an image inside it that isn't good for accessibility. Put a span inside there and give it this class and put some descriptive text for what the button does into the span. */
 
 .sr-only {
-  border: 0; 
-  clip: rect(0 0 0 0); 
+  border: 0;
+  clip: rect(0 0 0 0);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  height: 1px; 
+  height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
