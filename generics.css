@@ -2,9 +2,18 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; /* Mostly equivalates to 10px but allows users accessibility zoom settings to work*/
   /* font-size: 10px; */
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html,
@@ -15,13 +24,11 @@ body {
 body {
   font-size: 1.6rem;
   margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 /* Try to keep your margins going in one direction to avoid margin collapase or grounding. I switch all the top margins off to avoid this issue. */
 h1,
@@ -100,6 +107,17 @@ button * {
   pointer-events: null;
 }
 
+/* inherits the font */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*****************************
+* ACCESSIBILITY
+******************************/
 /* For 'accessibility text'. If your button only has an image inside it that isn't good for accessibility. Put a span inside there and give it this class and put some descriptive text for what the button does into the span. */
 
 .sr-only {
@@ -126,3 +144,15 @@ button * {
   -webkit-clip-path: auto;
   white-space: normal;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
