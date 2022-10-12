@@ -105,6 +105,7 @@ ul.typographic {
 a.btn *,
 button * {
   pointer-events: null;
+  user-select: none;
 }
 
 /* inherits the font */
