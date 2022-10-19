@@ -16,6 +16,12 @@ html:focus-within {
   box-sizing: inherit;
 }
 
+/* LAYOUT DEBUG */
+/* { */
+/*       outline: 3px solid orange; */
+/*       background-color: hsla(120, 50%, 50%, 0.18); */
+/* } */
+
 html,
 body {
   min-height: 100vh;
