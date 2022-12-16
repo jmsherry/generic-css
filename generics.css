@@ -5,6 +5,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color-scheme: dark light;
+  min-height: 100vh;
 }
 
 html:focus-within {
@@ -23,16 +24,12 @@ html:focus-within {
 /*       background-color: hsla(120, 50%, 50%, 0.18); */
 /* } */
 
-html,
-body {
-  min-height: 100vh;
-}
-
 body {
   font-size: 1.6rem;
   margin: 0;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 
@@ -109,7 +106,7 @@ ul.typographic {
 }
 
 /* stops icons being the target of JS click events */
-a.btn *,
+.btn *,
 button * {
   pointer-events: null;
   user-select: none;
@@ -128,6 +125,7 @@ select {
 ******************************/
 /* For 'accessibility text'. If your button only has an image inside it that isn't good for accessibility. Put a span inside there and give it this class and put some descriptive text for what the button does into the span. */
 
+.visually-hidden,
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
