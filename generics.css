@@ -4,6 +4,7 @@ html {
   /* font-size: 10px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark light;
 }
 
 html:focus-within {
@@ -30,7 +31,6 @@ body {
 body {
   font-size: 1.6rem;
   margin: 0;
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -85,7 +85,8 @@ a {
     }
   */
 
-img {
+img, picture, svg, video {
+  display: block;
   /* This means that it can be less than 100% of the width of its parent IF the image is INTRINSICALLY smaller */
   max-width: 100%;
 
