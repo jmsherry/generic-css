@@ -4,7 +4,7 @@ html {
   /* font-size: 10px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color-scheme: dark light;
+/*   color-scheme: dark light; */
   min-height: 100vh;
 }
 
