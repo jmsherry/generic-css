@@ -5,7 +5,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 /*   color-scheme: dark light; */
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 html:focus-within {
@@ -29,7 +29,7 @@ body {
   margin: 0;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 
