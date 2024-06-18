@@ -16,13 +16,11 @@ html:focus-within {
 *::before,
 *::after {
   box-sizing: inherit;
-}
 
-/* LAYOUT DEBUG */
-/* { */
-/*       outline: 3px solid orange; */
-/*       background-color: hsla(120, 50%, 50%, 0.18); */
-/* } */
+  /* LAYOUT DEBUG */
+  /* outline: 3px solid orange; */
+  /* background-color: hsla(120, 50%, 50%, 0.18); */
+}
 
 body {
   font-size: 1.6rem;
