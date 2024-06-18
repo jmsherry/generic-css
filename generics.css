@@ -102,6 +102,7 @@ ul.typographic {
 }
 
 /* stops icons being the target of JS click events */
+.button *,
 .btn *,
 button * {
   pointer-events: null;
