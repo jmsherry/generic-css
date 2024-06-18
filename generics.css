@@ -99,8 +99,8 @@ ul {
 
 /* To make actual bulletted lists */
 ul.typographic {
-  list-style: initial;
-  padding-inline-start: 20px;
+  list-style: revert;
+  padding-inline-start: revert;
 }
 
 /* stops icons being the target of JS click events */
