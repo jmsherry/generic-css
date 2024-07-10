@@ -162,5 +162,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  html:focus-within {
+  scroll-behavior: auto;
+}
 }
 
