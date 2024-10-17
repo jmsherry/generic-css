@@ -6,6 +6,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 /*   color-scheme: dark light; */
   min-height: 100dvh;
+  interpolate-size: allow-keywords;
 }
 
 html:focus-within {
