@@ -123,6 +123,12 @@ select {
   font: inherit;
 }
 
+/*
+textareat {
+  field-sizing: content;
+}
+*/
+
 /*****************************
 * ACCESSIBILITY
 ******************************/
